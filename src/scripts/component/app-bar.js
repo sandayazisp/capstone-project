@@ -1,4 +1,6 @@
+/* eslint-disable no-shadow */
 import $ from 'jquery';
+
 class AppBar extends HTMLElement {
   connectedCallback() {
     this.render();
@@ -6,9 +8,9 @@ class AppBar extends HTMLElement {
 
   render() {
     this.innerHTML = `
-    <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top p-4">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top p-4">
         <div class="container d-flex">
-            <a class="navbar-brand" href="#">Mai.Tour</a>
+            <a class="navbar-brand" href="#"><img class="" src="icons/MAI.TOUR.png" alt="" srcset=""></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -33,16 +35,19 @@ class AppBar extends HTMLElement {
     `;
 
     $(document).ready(($) => {
-        $(window).scroll(() => {
-          if ($(document).scrollTop() > 50) {
-            // Navigation Bar          
-            $('.navbar').addClass('bg-nav');
-          } else {
-  
-            $('.navbar').removeClass('bg-nav');
-          }
-        });
+      $(window).scroll(() => {
+        if ($(document).scrollTop() > 50) {
+          // Navigation Bar
+          $('.navbar').addClass('bg-nav');
+        } else {
+          $('.navbar').removeClass('bg-nav');
+        }
       });
+    });
+
+    $('.navbar-toggler-icon').click(() => {
+      $('.navbar').toggleClass('bg-nav');
+    });
   }
 }
 

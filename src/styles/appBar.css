@@ -5,9 +5,17 @@
     position: relative;
     transition: all 0.8s;
 }
+.navbar>.container>.collapse>ul>li:hover {
+    font-weight: bold;
+    transition: none;
+}
 
 .navbar {
     transition: 0.8s;
+}
+.navbar-brand img{
+    height: 45px;
+
 }
 
 .bg-nav {
