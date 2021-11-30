@@ -1,0 +1,33 @@
+.navbar>.container>.collapse>ul>li {
+    list-style-type: none;
+    padding: 0 20px;
+    display: inline-block;
+    position: relative;
+    transition: all 0.8s;
+}
+
+.navbar {
+    transition: 0.8s;
+}
+
+.bg-nav {
+    background-color: #343A40;
+    transition: 0.8s;
+}
+
+@media screen and (min-width: 765px) {
+    .navbar>.container>.collapse>.navbar-nav>.nav-item::after {
+        content: '';
+        width: 0;
+        height: 5px;
+        background: #EFCA08;
+        position: absolute;
+        top: 45px;
+        left: 0;
+        transition: 0.8s;
+    }
+    
+    .navbar>.container>.collapse>.navbar-nav>.nav-item:hover::after {
+        width: 100%;
+    }
+}

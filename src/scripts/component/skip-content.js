@@ -4,7 +4,9 @@ class SkipContent extends HTMLElement {
   }
 
   render() {
-    this.innerHTML = '<a href="#mainContent" class="skip-link">Skip to Content</a>';
+    this.innerHTML = `
+    <a href="#mainContent" class="skip-link">Skip to Content</a>
+    `;
   }
 }
 
