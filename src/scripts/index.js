@@ -10,11 +10,8 @@ import './component/content-footer';
 import '../styles/main.css';
 import App from './views/app';
 
-const main = document.querySelector('main');
-main.setAttribute('id', 'mainContent');
-
 const app = new App({
-  content: document.querySelector('#mainContent'),
+  content: document.querySelector('main'),
 });
 
 window.addEventListener('hashchange', () => {
