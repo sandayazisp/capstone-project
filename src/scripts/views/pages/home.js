@@ -192,7 +192,41 @@ const Home = {
                 </div>                            
             </div>
 
-            
+            <div id="info__tour">
+                <div class="container">
+                    <h2 class="text-center pt-5 pb-3">Mengapa Harus Mai.Tour ?</h2>
+                    <p class="text-center fw-bold">Dikelola oleh agen lokal Bali, harga lebih terjangkau dengan pelayanan yang ramah khas Bali.</p>
+                    <div class="row pb-5">
+                        <div class="col-sm-4">
+                          <div class="card text-center border-0">
+                            <div class="card-body">
+                              <h5 class="card-title">Memiliki Jaringan Luas</h5>
+                              <img src="images/mind_map.svg" class="card-img w-50 h-50 pt-3 pb-3" alt="...">
+                              <p class="card-text">Memiliki jaringan yang luas membuat kami mampu menyediakan berbagai macam tur dan perjalanan wisata yang kamu inginkan.</p>                              
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-4">
+                          <div class="card text-center border-0">
+                            <div class="card-body">
+                              <h5 class="card-title">Profesional</h5>
+                              <img src="images/handshake.svg" class="card-img w-50 h-50 pt-3 pb-3" alt="...">
+                              <p class="card-text">Mai.Tour memiliki team profesional yang akan membantu merancang rencana perjalanan sesuai yang kamu minati.</p>                              
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-4">
+                          <div class="card text-center border-0">
+                            <div class="card-body">
+                              <h5 class="card-title">Aktivitas & Kreasi Pilihan</h5>
+                              <img src="images/money_transfer.svg" class="card-img w-50 h-50 pt-3 pb-3" alt="...">
+                              <p class="card-text">Kepuasan anda adalah proritas bagi kami. Seluruh aktivitas tur dan rekreasi memiliki kualitas terbaik di bali.</p>                              
+                            </div>
+                          </div>
+                        </div>                        
+                      </div>
+                </div>
+            </div>
         </div>
 
       `;

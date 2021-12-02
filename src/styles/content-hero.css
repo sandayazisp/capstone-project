@@ -95,6 +95,11 @@
     object-position: center;
 }
 
+/* info tour guide */
+#info__tour h2{
+    font-family: 'Fredoka One', cursive;
+}
+
 /* Responsive */
 @media screen and (max-width: 375px) {
     #mainContent #rek__wisata .row .col .card img{
