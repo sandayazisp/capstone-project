@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Mochiy+Pop+P+One&family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Mochiy+Pop+P+One&family=Permanent+Marker&family=Righteous&family=Roboto+Mono:wght@100&display=swap');
 
 /* Content Hero */
 #content-hero img{
@@ -52,6 +52,9 @@
 #mainContent #rek__wisata h1{
     font-family: 'Fredoka One', cursive;
 }
+#mainContent #rek__wisata .d-grid a{
+    font-family: 'Roboto Mono', monospace;
+}
 #mainContent #rek__wisata .row .col .card img{
     width: 100%;
     height: 250px;
@@ -64,6 +67,32 @@
 #mainContent #rek__wisata .row .col .card .card-img-overlay{
     top: unset;
     text-align: center;
+}
+
+/* Guide Tour */
+#rek__guidetour .parallax{
+    background: url('/images/hero/hero-4.jpg');
+    min-height: 400px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#rek__guidetour .parallax h1{
+    font-family: 'Fredoka One', cursive;
+}
+#rek__guidetour .parallax h2{
+    font-family: 'Righteous', cursive;
+}
+#rek__guidetour .parallax .d-grid a{
+    font-family: 'Righteous', cursive;
+}
+#rek__guidetour .parallax img{
+    height: 350px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: center;
+    object-position: center;
 }
 
 /* Responsive */
@@ -83,6 +112,13 @@
     }
     #content-hero .container p {
         font-size: 100%;
+    }
+    #rek__guidetour .parallax img{
+        height: 250px;
+        -o-object-fit: cover;
+        object-fit: cover;
+        -o-object-position: center;
+        object-position: center;
     }
 }
 

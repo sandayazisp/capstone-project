@@ -50,7 +50,7 @@ const Home = {
                 <h1 class="text-center pt-2 pb-5">About Bali</h1>
                 <div class="row row-cols-1 row-cols-md-2">
                     <div class="col">
-                        <img src="images/gwk 2.png" class="rounded w-100 h-75" alt="Patung GWK">
+                        <img src="images/gwk 2.png" class="img-thumbnail w-100 h-75" alt="Patung GWK">
                     </div>
                     <div class="col">
                         <p class="ps-3 pe-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae minima similique natus laudantium expedita blanditiis culpa quos temporibus est fuga hic voluptate odit, fugiat commodi tempora incidunt unde minus totam. Quis ut corporis consequuntur dignissimos optio dolorum exercitationem et numquam ea quasi. Consequatur aperiam excepturi saepe labore cum voluptatem quisquam magni ratione, blanditiis quas. Harum voluptatem delectus cupiditate eius ab sit sapiente, nam optio ut obcaecati itaque. Repellendus eaque doloribus necessitatibus! Facilis, quidem est. Quo dignissimos mollitia excepturi sequi omnis et pariatur impedit illum autem, eveniet neque dolor in ullam. Fugit, temporibus nulla? Nisi eligendi rerum veniam sapiente qui odit praesentium cupiditate vel nostrum impedit magni at totam eos ex tenetur blanditiis laborum, facere, maxime repudiandae? Animi perferendis, suscipit veniam consequatur quaerat quo libero distinctio error accusantium facilis dicta sunt corporis impedit quas fuga? Fuga ullam doloribus sequi aliquam nihil dolorum corrupti natus repellendus voluptate impedit ipsum voluptas iure, error placeat inventore quam totam consectetur sunt. Atque eaque magnam quod, repellat sed quidem illo alias recusandae, nemo dolor aut non ipsa. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui esse facilis asperiores blanditiis minima perferendis pariatur magni et. Saepe, illo.</p>
@@ -150,8 +150,49 @@ const Home = {
             </div>
 
             <div id="rek__guidetour">
-                
+                <div class="parallax">
+                    <div class="container p-5">
+                        <h1 class="text-center pb-5 text-white">Tour Guide</h1>
+                        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 pb-5 border-bottom">
+                            <div class="col">
+                              <div class="card h-100">
+                                <img src="images/guide/guide-1.jpeg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Yosep</h5>
+                                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col">
+                              <div class="card h-100">
+                                <img src="images/guide/guide-2.jpeg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Dira</h5>
+                                  <p class="card-text">This is a short card.</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col">
+                              <div class="card h-100">
+                                <img src="images/guide/guide-3.jpeg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Gandi</h5>
+                                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                                </div>
+                              </div>
+                            </div>                            
+                        </div>
+                        <h2 class="text-center text-white pt-3 pb-3">Quick Response ?</h2>
+                        <h2 class="text-center text-white pb-3">Please Contact Us</h2>                                                
+                        <div class="d-grid d-flex gap-2 col-12 justify-content-center mx-auto">
+                            <a class="btn btn-outline-info" href="#" role="button">Call Us</a> 
+                            <a class="btn btn-outline-info" href="#" role="button">Whatsapp</a>
+                          </div>                       
+                    </div>
+                </div>                            
             </div>
+
+            
         </div>
 
       `;
