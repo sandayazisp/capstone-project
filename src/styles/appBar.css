@@ -5,6 +5,10 @@
     position: relative;
     transition: all 0.8s;
 }
+.navbar>.container>.collapse>ul>li a{
+    min-height: 44px;
+    min-width: 44px;
+}
 .navbar>.container>.collapse>ul>li:hover {
     font-weight: bold;
     transition: none;
