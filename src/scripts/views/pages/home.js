@@ -18,8 +18,8 @@ const Home = {
                     <h1 class="text-md-start">BALI</h1>
                     <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. At fuga est doloremque
                         asperiores, minus repudiandae quia vel officia dolor eveniet, amet optio iste aliquam eum delectus
-                        perspiciatis beatae autem omnis.</p>
-                    <button type="button" class="btn btn-outline-warning">Requirements</button>
+                        perspiciatis beatae autem omnis.</p>                    
+                    <a class="btn btn-outline-warning" href="#" role="button">Requirements </a>
                 </div>
         
                 <!-- The slideshow/carousel -->

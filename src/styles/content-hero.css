@@ -25,6 +25,10 @@
     z-index: 1;
     border-radius: 20px;
 }
+#content-hero .container a {
+    min-width: 44px;
+    min-height: 44px;
+}
 
 /* About Bali */
 #mainContent #about__bali h1{
@@ -54,6 +58,8 @@
 }
 #mainContent #rek__wisata .d-grid a{
     font-family: 'Roboto Mono', monospace;
+    min-height: 44px;
+    min-width: 44px;
 }
 #mainContent #rek__wisata .row .col .card img{
     width: 100%;
@@ -86,6 +92,8 @@
 }
 #rek__guidetour .parallax .d-grid a{
     font-family: 'Righteous', cursive;
+    min-height: 44px;
+    min-width: 44px;
 }
 #rek__guidetour .parallax img{
     height: 350px;
