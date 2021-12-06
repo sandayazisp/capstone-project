@@ -16,6 +16,8 @@
 
 .navbar {
     transition: 0.8s;
+    background: linear-gradient(to bottom,rgb(0 0 0 / 50%) 0,rgb(0 0 0 / 30%) 100%);
+    border-bottom: 1px solid rgb(255 255 255 / .3);
 }
 .navbar-brand img{
     height: 45px;
@@ -23,7 +25,7 @@
 }
 
 .bg-nav {
-    background-color: #343A40;
+    background-color: #343A40 !important;
     transition: 0.8s;
 }
 
