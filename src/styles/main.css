@@ -33,3 +33,7 @@ a.skip-link{
     min-width: 44px;
     text-decoration: none;
 }
+
+main{
+    min-height: 500px;
+}
