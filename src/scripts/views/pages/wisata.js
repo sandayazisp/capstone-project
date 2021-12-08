@@ -1,3 +1,6 @@
+import WisataDbSource from '../../data/wisatadb-source';
+import { createDestinasiWisataItemTemplate } from '../templates/template-creator';
+
 const Wisata = {
   async render() {
     return `
@@ -62,247 +65,8 @@ const Wisata = {
                 <div class="parallax pt-5 pb-5">
                     <!-- <div class="container"> -->
                         <h1 class="text-center pb-5 text-white">Destinasi Objek Wisata</h1>
-                        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4 mx-auto">
-                            <div class="col">
-                                <div class="card">
-                                    <img src="images/rekomendasi/alas Harum 3.jpg" class="card-img-top" alt="Alas Harum">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                            of the card's
-                                            content.</p>
-                                        <a href="#" class="btn btn-primary">Details</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="card">
-                                    <img src="images/rekomendasi/bedugul 2.jpg" class="card-img-top" alt="Bedugul">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                            of the card's
-                                            content.</p>
-                                        <a href="#" class="btn btn-primary">Details</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="card">
-                                    <img src="images/rekomendasi/gwk.jpg" class="card-img-top" alt="Patung GWK">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                            of the card's
-                                            content.</p>
-                                        <a href="#" class="btn btn-primary">Details</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="card">
-                                    <img src="images/rekomendasi/nusa Penida 3.png" class="card-img-top" alt="Nusa Penida">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                            of the card's
-                                            content.</p>
-                                        <a href="#" class="btn btn-primary">Details</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="card">
-                                    <img src="images/rekomendasi/pura Lempuyang 1.png" class="card-img-top" alt="Pura Lempuyang">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                            of the card's
-                                            content.</p>
-                                        <a href="#" class="btn btn-primary">Details</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="card">
-                                    <img src="images/rekomendasi/sekumpul 1.jpg" class="card-img-top" alt="Sekumpul">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                            of the card's
-                                            content.</p>
-                                        <a href="#" class="btn btn-primary">Details</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="card">
-                                    <img src="images/rekomendasi/tanah Lot 2.png" class="card-img-top" alt="Tanah Lot">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                            of the card's
-                                            content.</p>
-                                        <a href="#" class="btn btn-primary">Details</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="card">
-                                    <img src="images/rekomendasi/tirta Gangga 1.jpg" class="card-img-top" alt="Tirta Gangga">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                            of the card's
-                                            content.</p>
-                                        <a href="#" class="btn btn-primary">Details</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="card">
-                                    <img src="images/rekomendasi/tukad Cepung 1.jpg" class="card-img-top" alt="Tukad Cepung">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                            of the card's
-                                            content.</p>
-                                        <a href="#" class="btn btn-primary">Details</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="card">
-                                    <img src="images/rekomendasi/ulu Watu 1.jpg" class="card-img-top" alt="Ulu Watu">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                            of the card's
-                                            content.</p>
-                                        <a href="#" class="btn btn-primary">Details</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="card">
-                                    <img src="images/wisata/" class="card-img-top" alt="Ulu Watu">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                            of the card's
-                                            content.</p>
-                                        <a href="#" class="btn btn-primary">Details</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="card">
-                                    <img src="images/wisata/" class="card-img-top" alt="Ulu Watu">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                            of the card's
-                                            content.</p>
-                                        <a href="#" class="btn btn-primary">Details</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="card">
-                                    <img src="images/wisata/" class="card-img-top" alt="Ulu Watu">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                            of the card's
-                                            content.</p>
-                                        <a href="#" class="btn btn-primary">Details</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="card">
-                                    <img src="images/wisata/" class="card-img-top" alt="Ulu Watu">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                            of the card's
-                                            content.</p>
-                                        <a href="#" class="btn btn-primary">Details</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="card">
-                                    <img src="images/wisata/" class="card-img-top" alt="Ulu Watu">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                            of the card's
-                                            content.</p>
-                                        <a href="#" class="btn btn-primary">Details</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="card">
-                                    <img src="images/wisata/" class="card-img-top" alt="Ulu Watu">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                            of the card's
-                                            content.</p>
-                                        <a href="#" class="btn btn-primary">Details</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="card">
-                                    <img src="images/wisata/" class="card-img-top" alt="Ulu Watu">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                            of the card's
-                                            content.</p>
-                                        <a href="#" class="btn btn-primary">Details</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="card">
-                                    <img src="images/wisata/" class="card-img-top" alt="Ulu Watu">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                            of the card's
-                                            content.</p>
-                                        <a href="#" class="btn btn-primary">Details</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="card">
-                                    <img src="images/wisata/" class="card-img-top" alt="Ulu Watu">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                            of the card's
-                                            content.</p>
-                                        <a href="#" class="btn btn-primary">Details</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="card">
-                                    <img src="images/wisata/" class="card-img-top" alt="Ulu Watu">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                            of the card's
-                                            content.</p>
-                                        <a href="#" class="btn btn-primary">Details</a>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4 mx-auto des__wisata">
+                           <!-- Destinasi Wisata -->
                         </div>
                     <!-- </div> -->
                 </div>
@@ -324,6 +88,12 @@ const Wisata = {
 
   async afterRender() {
     // Fungsi ini akan dipanggil setelah render()
+    const desWisata = await WisataDbSource.wisata();
+    console.log(desWisata);
+    const desWisataContainer = document.querySelector('.des__wisata');
+    desWisata.forEach((wisata) => {
+      desWisataContainer.innerHTML += createDestinasiWisataItemTemplate(wisata);
+    });
   },
 };
 

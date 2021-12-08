@@ -63,6 +63,19 @@
     -o-object-position: center;
     object-position: center;
 }
+#mainContent #des__wisata .row .col .card .card-text{
+    margin-top: 16px;    
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    text-align: justify;    
+}
+#mainContent #des__wisata .row .col .card {
+    border-radius: 20px;
+    overflow: hidden;
+}
 
 #des__wisata .parallax{
     background: url('/images/hero/hero-4.jpg');
