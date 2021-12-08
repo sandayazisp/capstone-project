@@ -7,7 +7,9 @@
     -o-object-position: center;
     object-position: center;
 }
-
+#content-hero .carousel-control-prev-icon::after, #content-hero .carousel-control-next-icon::after {
+    content: none;
+}
 #content-hero h1{
     font-family: 'Mochiy Pop P One', sans-serif;
     font-family: 'Permanent Marker', cursive;
@@ -45,6 +47,7 @@
     object-fit: cover;
     -o-object-position: center;
     object-position: center;
+    box-shadow: rgb(0 0 0 / 25%) 0px 8px 16px 0px;
 }
 
 /* Rekomended Wisata */
@@ -65,13 +68,47 @@
     -o-object-fit: cover;
     object-fit: cover;
     -o-object-position: center;
-    object-position: center;
+    object-position: center;    
 }
-
-#mainContent #rek__wisata .row .col .card .card-img-overlay{
-    top: unset;
+#mainContent #rek__wisata .row .col .card:hover{
+    cursor: pointer;   
+}
+#mainContent #rek__wisata .row .col .card{
+    border-radius: 15px;
+}
+#mainContent #rek__wisata .row .col .card .card-img-overlay{     
+    background: transparent linear-gradient(180deg, rgb(13 28 52 / 0) 0, rgb(13 28 52 / 50%) 100%) 0 0 no-repeat padding-box;
+    width: 100%;
+    height: 100%;
     text-align: center;
 }
+
+#mainContent #rek__wisata .rek__wisata .card .card-title{    
+    border-radius: 8px;        
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    font-size: 16px;
+}
+
+/* modal rekomendasi wisata */
+#mainContent #rek__wisata .modal .modal-body .row img{    
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: center;
+    object-position: center;
+}
+#mainContent #rek__wisata .modal .modal-body .modal-header{    
+    position: absolute;
+    right: 0;
+    padding-top: 10px;
+    padding-right: 10px;
+}
+#mainContent #rek__wisata .modal .modal-body .modal__des{    
+    text-align: justify;
+    text-indent: 2em;
+}
+
 
 /* Guide Tour */
 #rek__guidetour .parallax{
@@ -94,11 +131,47 @@
     min-width: 44px;
 }
 #rek__guidetour .parallax img{
-    height: 350px;
+    height: 400px;
+    width: 100%;
     -o-object-fit: cover;
     object-fit: cover;
     -o-object-position: center;
     object-position: center;
+}
+#rek__guidetour .row .col .card .card-img-overlay{     
+    background: transparent linear-gradient(180deg, rgb(13 28 52 / 0) 0, rgb(13 28 52 / 50%) 100%) 0 0 no-repeat padding-box;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+#rek__guidetour .row .col .card {     
+    border-radius: 20px;
+}
+#rek__guidetour .row .col .card .card-img{         
+    opacity: 1;  
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#rek__guidetour .row .col .card:hover .card-img{
+opacity: 0.5;
+}
+
+#rek__guidetour .row .col .card:hover .middle {
+opacity: 1;
+}
+#rek__guidetour .row .col .card:hover {     
+    cursor: pointer;
 }
 
 /* info tour guide */
@@ -116,6 +189,9 @@
         -o-object-position: center;
         object-position: center;
     }
+    #rek__guidetour .parallax .container .col .card-img-overlay h5{
+        font-size: 15px;
+    }
 }
 @media screen and (max-width: 425px) {
     #content-hero .container {
@@ -131,6 +207,16 @@
         -o-object-position: center;
         object-position: center;
     }
+    #mainContent #rek__wisata .modal .modal-dialog{    
+        width: 80%;
+        margin: auto;
+    }
+    #mainContent #rek__wisata .modal .modal-body .row .img{            
+        height: 50vh;
+    }
+    #rek__guidetour .parallax .container .col .card-img-overlay h5{
+        font-size: 18px;
+    }
 }
 
 @media screen and (min-width: 765px) {
@@ -139,7 +225,12 @@
     }
     #content-hero h1:nth-child(2){
         font-size: 5rem;
-    }   
+    } 
+    #mainContent #rek__wisata .modal .modal-body .row .img{    
+        position: sticky;
+        top: 0;
+        height: 91.3vh;
+    }  
 }
 @media screen and (min-width: 900px) {
     #content-hero h1:nth-child(1){

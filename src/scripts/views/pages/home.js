@@ -1,3 +1,6 @@
+import WisataDbSource from '../../data/wisatadb-source';
+import { createGuideTourItemTemplate, createRekWisataItemTemplate } from '../templates/template-creator';
+
 const Home = {
   async render() {
     return `
@@ -49,7 +52,7 @@ const Home = {
             <div class="container pt-5" id="about__bali">
                 <h1 class="text-center pt-2 pb-5">About Bali</h1>
                 <div class="row row-cols-1 row-cols-md-2">
-                    <div class="col">
+                    <div class="col">                        
                         <img src="images/gwk 2.png" class="img-thumbnail w-100 h-75" alt="Patung GWK">
                     </div>
                     <div class="col">
@@ -61,90 +64,11 @@ const Home = {
             <div id="rek__wisata" class="pt-5 pb-5">
                 <div class="container">
                     <h1 class="text-center pb-5 text-white">Recomended Objek Wisata</h1>
-                    <div class="row row-cols-2 row-cols-md-3 row-cols-lg-5 g-4">
-                        <div class="col">
-                            <div class="card">
-                                <img src="images/rekomendasi/alas Harum 3.jpg" class="card-img" alt="Alas Harum">
-                                <div class="card-img-overlay">
-                                    <h5 class="card-title text-white fw-lighter bg-dark bg-opacity-25 p-2">Alas Harum</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card">
-                                <img src="images/rekomendasi/bedugul 2.jpg" class="card-img" alt="Bedugul">
-                                <div class="card-img-overlay">
-                                    <h5 class="card-title text-white fw-lighter bg-dark bg-opacity-25 p-2">Bedugul</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card">
-                                <img src="images/rekomendasi/gwk.jpg" class="card-img" alt="Patung GWK">
-                                <div class="card-img-overlay">
-                                    <h5 class="card-title text-white fw-lighter bg-dark bg-opacity-25 p-2">Patung GWK</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card">
-                                <img src="images/rekomendasi/nusa Penida 3.png" class="card-img" alt="Nusa Penida">
-                                <div class="card-img-overlay">
-                                    <h5 class="card-title text-white fw-lighter bg-dark bg-opacity-25 p-2">Nusa Penida</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card">
-                                <img src="images/rekomendasi/pura Lempuyang 1.png" class="card-img" alt="Pura Lempuyang">
-                                <div class="card-img-overlay">
-                                    <h5 class="card-title text-white fw-lighter bg-dark bg-opacity-25 p-2">Pura Lempuyang</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card">
-                                <img src="images/rekomendasi/sekumpul 1.jpg" class="card-img" alt="Sekumpul">
-                                <div class="card-img-overlay">
-                                    <h5 class="card-title text-white fw-lighter bg-dark bg-opacity-25 p-2">Sekumpul</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card">
-                                <img src="images/rekomendasi/tanah Lot 2.png" class="card-img" alt="Tanah Lot">
-                                <div class="card-img-overlay">
-                                    <h5 class="card-title text-white fw-lighter bg-dark bg-opacity-25 p-2">Tanah Lot</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card">
-                                <img src="images/rekomendasi/tirta Gangga 1.jpg" class="card-img" alt="Tirta Gangga">
-                                <div class="card-img-overlay">
-                                    <h5 class="card-title text-white fw-lighter bg-dark bg-opacity-25 p-2">Tirta Gangga</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card">
-                                <img src="images/rekomendasi/tukad Cepung 1.jpg" class="card-img" alt="Tukad Cepung">
-                                <div class="card-img-overlay">
-                                    <h5 class="card-title text-white fw-lighter bg-dark bg-opacity-25 p-2">Tukad Cepung</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card">
-                                <img src="images/rekomendasi/ulu Watu 1.jpg" class="card-img" alt="Ulu Watu">
-                                <div class="card-img-overlay">
-                                    <h5 class="card-title text-white fw-lighter bg-dark bg-opacity-25 p-2">Ulu Watu</h5>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="row row-cols-1 row-cols-md-3 row-cols-lg-5 g-4 rek__wisata">
+                        <!-- Item Rekomendasi wisata dari api -->
                     </div>
                     <div class="d-grid mt-5">
-                        <a class="btn btn-primary mx-auto" href="#" role="button">Selengkapnya </a>
+                        <a class="btn btn-primary mx-auto" href="#/wisata" role="button">Selengkapnya </a>                                                
                     </div>
                 </div>
             </div>
@@ -153,34 +77,8 @@ const Home = {
                 <div class="parallax">
                     <div class="container p-5">
                         <h1 class="text-center pb-5 text-white">Tour Guide</h1>
-                        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 pb-5 border-bottom">
-                            <div class="col">
-                              <div class="card h-100">
-                                <img src="images/guide/guide-1.jpeg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                  <h5 class="card-title">Yosep</h5>
-                                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col">
-                              <div class="card h-100">
-                                <img src="images/guide/guide-2.jpeg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                  <h5 class="card-title">Dira</h5>
-                                  <p class="card-text">This is a short card.</p>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col">
-                              <div class="card h-100">
-                                <img src="images/guide/guide-3.jpeg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                  <h5 class="card-title">Gandi</h5>
-                                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-                                </div>
-                              </div>
-                            </div>                            
+                        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 pb-5 border-bottom guideToure">
+                                                     
                         </div>
                         <h2 class="text-center text-white pt-3 pb-3">Quick Response ?</h2>
                         <h2 class="text-center text-white pb-3">Please Contact Us</h2>                                                
@@ -196,9 +94,9 @@ const Home = {
                 <div class="container">
                     <h2 class="text-center pt-5 pb-3">Mengapa Harus Mai.Tour ?</h2>
                     <p class="text-center fw-bold">Dikelola oleh agen lokal Bali, harga lebih terjangkau dengan pelayanan yang ramah khas Bali.</p>
-                    <div class="row pb-5">
-                        <div class="col-sm-4">
-                          <div class="card text-center border-0">
+                    <div class="row pb-5 gap-5 justify-content-center">
+                        <div class="col-md-4 col-lg-3 shadow">
+                          <div class="card text-center border-0 shadow-none">
                             <div class="card-body">
                               <h5 class="card-title">Memiliki Jaringan Luas</h5>
                               <img src="images/mind_map.svg" class="card-img w-50 h-50 pt-3 pb-3" alt="...">
@@ -206,8 +104,8 @@ const Home = {
                             </div>
                           </div>
                         </div>
-                        <div class="col-sm-4">
-                          <div class="card text-center border-0">
+                        <div class="col-md-4 col-lg-3 shadow">
+                          <div class="card text-center border-0 shadow-none">
                             <div class="card-body">
                               <h5 class="card-title">Profesional</h5>
                               <img src="images/handshake.svg" class="card-img w-50 h-50 pt-3 pb-3" alt="...">
@@ -215,8 +113,8 @@ const Home = {
                             </div>
                           </div>
                         </div>
-                        <div class="col-sm-4">
-                          <div class="card text-center border-0">
+                        <div class="col-md-4 col-lg-3 shadow">
+                          <div class="card text-center border-0 shadow-none">
                             <div class="card-body">
                               <h5 class="card-title">Aktivitas & Kreasi Pilihan</h5>
                               <img src="images/money_transfer.svg" class="card-img w-50 h-50 pt-3 pb-3" alt="...">
@@ -233,7 +131,16 @@ const Home = {
   },
 
   async afterRender() {
-    // Fungsi ini akan dipanggil setelah render()
+    const wisata = await WisataDbSource.home();
+    const guide = await WisataDbSource.guide();
+    const rekWisataContainer = document.querySelector('.rek__wisata');
+    const guideTourContainer = document.querySelector('.guideToure')
+    wisata.forEach((wisata) => {
+      rekWisataContainer.innerHTML += createRekWisataItemTemplate(wisata);      
+    });
+    guide.forEach((guide) => {      
+      guideTourContainer.innerHTML += createGuideTourItemTemplate(guide);
+    });
   },
 };
 
