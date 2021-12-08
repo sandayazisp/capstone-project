@@ -1,7 +1,11 @@
+/* eslint-disable import/no-unresolved */
 /* eslint-disable no-unused-vars */
 /* eslint-disable import/extensions */
 /* for async await transpile */
 import 'regenerator-runtime';
+import 'mdb-ui-kit/css/mdb.min.css';
+import * as mdb from 'mdb-ui-kit'; // lib
+import { Input } from 'mdb-ui-kit'; // module
 import 'bootstrap/dist/js/bootstrap.bundle.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './component/skip-content';
