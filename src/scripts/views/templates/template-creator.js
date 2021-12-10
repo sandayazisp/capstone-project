@@ -46,7 +46,7 @@ const createRekWisataItemTemplate = (rekWisata) => `
                             <div class="col-md-6 ms-auto p-3">
                                 <h4 class="modal-title" id="exampleModalLabel">${rekWisata.name}</h4>
                                 <p class="modal__des">${rekWisata.description}</p>                                                    
-                                <a class="btn btn-info btn-rounded w-100 p-3 fw-bold" href="#/wisata" role="button">Details </a>
+                                <a class="btn btn-info btn-rounded w-100 p-3 fw-bold" href="#" role="button">Details </a>
                             </div>
                         </div>                                                                             
                     </div>
