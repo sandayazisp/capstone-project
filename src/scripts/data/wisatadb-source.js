@@ -21,7 +21,8 @@ class WisataDbSource {
 
   static async detailWisata(id) {
     const response = await fetch(API_ENDPOINT.DETAIL(id));
-    return response.json();
+    const responseJson = await response.json();
+    return responseJson.wisata_bali;
   }
 }
 
