@@ -20,7 +20,7 @@ const Home = {
                     <h1>Welcome To</h1>
                     <h1 class="text-md-start">BALI</h1>
                     <p class="text-center">Bali merupakan destinasi tempat wisata yang terkenal di seluruh manca negara. Keindahan pantai, gunung serta persawahan yang dimiliki oleh bali membuat ketertarikan wisatawan mengunjungi bali</p>                    
-                    <a class="btn btn-outline-warning" href="#" role="button">Requirements </a>
+                    <a class="btn btn-outline-warning" href="#/requirement" role="button">Requirements </a>
                 </div>
         
                 <!-- The slideshow/carousel -->
