@@ -1,5 +1,5 @@
 import WisataDbSource from '../../data/wisatadb-source';
-import { createDestinasiWisataItemTemplate, createImageItemWisata } from '../templates/template-creator';
+import { createDestinasiWisataItemTemplate } from '../templates/template-creator';
 
 const Wisata = {
   async render() {

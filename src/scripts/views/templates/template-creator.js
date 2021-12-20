@@ -72,7 +72,7 @@ const createWisataDetailTemplate = (wisata) => `
                     </div>
                     </div>
                 </div>
-                <h4 class="pt-5">Information</h4>
+                <h4 class="pt-5">Informasi</h4>
                 <table class="table w-50 m-auto table-bordered text-center mb-3 mt-3">
                     <thead class="table-light">
                       <tr>
@@ -162,19 +162,19 @@ const createWisataDetailTemplate = (wisata) => `
             
             <div id="info__tour">
                 <div class="container p-5">               
-                  <h2 class="text-center pt-3 pb-3">Quick Response ?</h2>
-                  <h2 class="text-center pb-3">Please Contact Us</h2>                                                
-                  <div class="d-grid d-flex gap-2 col-12 justify-content-center mx-auto">                      
-                      <a class="btn btn-outline-info" href="#" role="button">Whatsapp</a>
+                  <h2 class="text-center pt-3 pb-3">Hubungi Admin</h2>
+                  <h4 class="text-center pb-3">Untuk Mendapatkan Pemandu Wisata yang Baik dan Profesional</h4>                                                
+                  <div class="d-grid d-flex gap-2 col-12 justify-content-center mx-auto">
+                      <a class="btn btn-outline-info" href="http://wa.me/+6287865950912" target="_blank" rel="noopener" role="button">Whatsapp</a>
                     </div>                       
               </div>
-            </div>  
+            </div> 
 `;
 
 const createRekWisataItemTemplate = (rekWisata) => `                
     <div class="col">
         <div class="card bg-image hover-zoom" data-mdb-toggle="modal" data-mdb-target="#${rekWisata.id}">
-            <img src="${rekWisata.pictureUrl}" class="card-img" alt="${rekWisata.name}">
+            <img class="card-img lazyload" data-src="${rekWisata.pictureUrl}" alt="${rekWisata.name}">
             <div class="card-img-overlay">
                 <h5 class="card-title text-white p-2 w-100 h-100 d-flex justify-content-center align-items-end">${rekWisata.name}</h5>
             </div>
@@ -188,16 +188,17 @@ const createRekWisataItemTemplate = (rekWisata) => `
                 <div class="modal-body p-0 m-0">
                     <div class="container-fluid">
                         <div class="modal-header border-0">                                    
-                            <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+                            
                         </div>
                         <div class="row">
                             <div class="col-md-6 p-0 img">
-                                <img src="${rekWisata.pictureUrl}" class="img-thumbnail" alt="...">
+                                <img src="${rekWisata.pictureUrl}" class="img-thumbnail" alt="${rekWisata.name}">
                             </div>
                             <div class="col-md-6 ms-auto p-3">
                                 <h4 class="modal-title" id="exampleModalLabel">${rekWisata.name}</h4>
-                                <p class="modal__des">${rekWisata.description}</p>                                                    
-                                <a class="btn btn-info btn-rounded w-100 p-3 fw-bold" href="${`/#/detail/${movie.id}`}" role="button">Details </a>
+                                <p class="modal__des">${rekWisata.description}</p>                              
+                                <button type="button" class="btn btn-info btn-rounded w-100 p-3 fw-bold" data-mdb-dismiss="modal" aria-label="Close"><a class="btn btn-info btn-rounded w-100 p-3 fw-bold" href="${`/#/detail/${rekWisata.id}`}" role="button">Details </a></button>                      
+                                
                             </div>
                         </div>                                                                             
                     </div>
@@ -210,7 +211,7 @@ const createRekWisataItemTemplate = (rekWisata) => `
 const createDestinasiWisataItemTemplate = (desWisata) => `
     <div class="col">
         <div class="card">
-            <img src="${desWisata.pictureUrl}" class="card-img-top" alt="${desWisata.name}">
+            <img class="card-img-top lazyload" data-src="${desWisata.pictureUrl}" alt="${desWisata.name}">
             <div class="card-body overflow-hidden">
                 <h5 class="card-title">${desWisata.name}</h5>
                 <p class="card-text">${desWisata.description}</p>
@@ -219,17 +220,42 @@ const createDestinasiWisataItemTemplate = (desWisata) => `
         </div>
     </div>
 `;
+const createTourGuideItemTemplate = (tourGuide) => `
+    <div class="card mb-5">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img class="img-fluid rounded-start w-100 h-100 lazyload" data-src="${tourGuide.pictureUrl}" alt="${tourGuide.name}"/>
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+            <h5 class="card-title text-decoration-underline">${tourGuide.name}</h5>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">Sebagai Guide ${tourGuide.guide}</li>
+                <li class="list-group-item">Lokasi : ${tourGuide.kota}</li>
+                <li class="list-group-item">Durasi = ${tourGuide.durasi} jam/hari</li>
+                <li class="list-group-item">Bahasa yang dikuasi : ${tourGuide.bahasa.map((name) => name.bahasa).join(', ')}</li>
+                <li class="list-group-item">${tourGuide.pengalaman}</li>                                       
+                <div class="card-footer"> <li class="list-group-item fw-bold text-center bg-light">IDR ${tourGuide.harga}/Hari || Max. ${tourGuide.kapasitas} Orang </li>
+                </div>
+                <div class="card-footer"> <li class="list-group-item fw-bold text-center"><a class="btn btn-outline-info" href="http://wa.me/+6287865950912" target="_blank" rel="noopener" role="button">Hubungi Admin</a> </li>
+                </div>
+              </ul>                                                     
+        </div>
+      </div>
+    </div>
+</div>
+`;
 
 const createGuideTourItemTemplate = (guideTour) => `
     <div class="col">
     <div class="card bg-image hover-shadow">
-        <img src="${guideTour.pictureUrl}" class="card-img" alt="Alas Harum">
+        <img class="card-img lazyload" data-src="${guideTour.pictureUrl}" alt="${guideTour.name}">
         <div class="card-img-overlay d-flex justify-content-end align-items-center text-center flex-column">
-            <h5 class="card-title text-white">Hallo Im</h5>
+            <h5 class="card-title text-white">Halo Saya</h5>
             <h5 class="card-title text-white p-1">${guideTour.name}</h5>
             <h5 class="card-title text-white">${guideTour.kota}</h5>
             <div class="middle">                
-                <a class="btn btn-outline-light" href="#" role="button">See More »</a>
+                <a class="btn btn-outline-light" href="#/tour-guide" role="button">Selengkapnya »</a>
             </div>
         </div>
     </div>
@@ -241,4 +267,5 @@ export {
   createWisataDetailTemplate,
   createGuideTourItemTemplate,
   createDestinasiWisataItemTemplate,
+  createTourGuideItemTemplate,  
 };
