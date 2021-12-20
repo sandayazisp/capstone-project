@@ -267,5 +267,5 @@ export {
   createWisataDetailTemplate,
   createGuideTourItemTemplate,
   createDestinasiWisataItemTemplate,
-  createTourGuideItemTemplate,  
+  createTourGuideItemTemplate,
 };

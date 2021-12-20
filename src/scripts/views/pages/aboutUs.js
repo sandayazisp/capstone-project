@@ -61,7 +61,7 @@ const AboutUs = {
   },
 
   async afterRender() {
-    // Fungsi ini akan dipanggil setelah render()           
+    // Fungsi ini akan dipanggil setelah render()
   },
 };
 

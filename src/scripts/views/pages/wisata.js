@@ -59,11 +59,10 @@ const Wisata = {
     // Fungsi ini akan dipanggil setelah render()
     const desWisata = await WisataDbSource.wisata();
     const desWisataContainer = document.querySelector('.des__wisata');
-    const test = document.querySelector('#test');
-    
+
     desWisata.forEach((wisata) => {
       desWisataContainer.innerHTML += createDestinasiWisataItemTemplate(wisata);
-    });    
+    });
   },
 };
 

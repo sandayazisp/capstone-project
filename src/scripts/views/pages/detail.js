@@ -1,3 +1,4 @@
+/* eslint-disable func-names */
 import $ from 'jquery';
 import WisataDbSource from '../../data/wisatadb-source';
 import UrlParser from '../../routes/url-parser';

@@ -1,3 +1,4 @@
+/* eslint-disable no-shadow */
 import WisataDbSource from '../../data/wisatadb-source';
 import { createGuideTourItemTemplate, createRekWisataItemTemplate } from '../templates/template-creator';
 
@@ -160,11 +161,11 @@ const Home = {
     const wisata = await WisataDbSource.home();
     const guide = await WisataDbSource.guide();
     const rekWisataContainer = document.querySelector('.rek__wisata');
-    const guideTourContainer = document.querySelector('.guideToure')
+    const guideTourContainer = document.querySelector('.guideToure');
     wisata.forEach((wisata) => {
-      rekWisataContainer.innerHTML += createRekWisataItemTemplate(wisata);      
+      rekWisataContainer.innerHTML += createRekWisataItemTemplate(wisata);
     });
-    guide.forEach((guide) => {      
+    guide.forEach((guide) => {
       guideTourContainer.innerHTML += createGuideTourItemTemplate(guide);
     });
   },

@@ -1,5 +1,5 @@
-import WisataDbSource from "../../data/wisatadb-source";
-import { createGuideTourItemTemplate, createTourGuideItemTemplate } from "../templates/template-creator";
+import WisataDbSource from '../../data/wisatadb-source';
+import { createTourGuideItemTemplate } from '../templates/template-creator';
 
 const TourGuide = {
   async render() {
@@ -73,7 +73,7 @@ const TourGuide = {
 
   async afterRender() {
     // Fungsi ini akan dipanggil setelah render()
-    const tourGuide = await WisataDbSource.guide();       
+    const tourGuide = await WisataDbSource.guide();
     const tourGuideContainer = document.querySelector('.tourguide');
     tourGuide.forEach((tour) => {
       tourGuideContainer.innerHTML += createTourGuideItemTemplate(tour);
