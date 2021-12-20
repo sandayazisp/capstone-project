@@ -53,7 +53,7 @@
 #detail .testimonial {
 font-family: "Montserrat", sans-serif;
   padding: 100px 0;  
-  background: url('/images/hero/hero-5.webp');
+  background: url('/images/hero-5-xl.jpg');
 }
 #detail .testimonial .row .tabs {
   all: unset;
@@ -211,7 +211,20 @@ font-family: "Montserrat", sans-serif;
 #detail #info__tour{
     background-color: #E4EFE7;
 }
-
+@media screen and (max-width: 600px) {
+  #detail .testimonial {
+    font-family: "Montserrat", sans-serif;
+      padding: 100px 0;  
+      background: url('/images/hero-5-small.jpg');
+    }
+}
+@media screen and (max-width: 900px) {
+  #detail .testimonial {
+    font-family: "Montserrat", sans-serif;
+      padding: 100px 0;  
+      background: url('/images/hero-5-large.jpg');
+    }
+}
 @media only screen and (max-width: 1200px) {
   #detail .testimonial .row .tabs {
     margin-right: 25px;
