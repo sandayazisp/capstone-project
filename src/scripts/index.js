@@ -13,7 +13,10 @@ import './component/skip-content';
 import './component/app-bar';
 import './component/content-footer';
 import '../styles/main.css';
+import 'lazysizes';
+import 'lazysizes/plugins/parent-fit/ls.parent-fit';
 import App from './views/app';
+import swRegister from './utils/sw-Register';
 
 const app = new App({
   content: document.querySelector('main'),
@@ -23,6 +26,7 @@ window.addEventListener('hashchange', () => {
   app.renderPage();
 });
 
-window.addEventListener('load', () => {
+window.addEventListener('DOMContentLoaded', () => {
   app.renderPage();
+  swRegister();
 });
