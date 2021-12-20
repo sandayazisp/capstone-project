@@ -13,8 +13,15 @@ const Requirement = {
                   untuk bisa berkunjung ke Pulau Dewata Bali. Berikut telah Wego rangkum syarat-syarat yang diperlukan bagi WNI
                   maupun WNA yang ingin berkunjung ke Bali!</p>
           
-              <h3 class="pb-2">Syarat Masuk Bali untuk WNI</h3>
-              <img src="images/wni.webp" class="img-fluid" alt="Pantai Melasti">
+              <h3 class="pb-2">Syarat Masuk Bali untuk WNI</h3>              
+              <picture>
+                <source media="(max-width: 600px)" srcset="./images/wni-small.jpg">
+                <source media="(max-width: 1024px)" srcset="./images/wni-large.jpg">
+                <img 
+                    src="./images/wni-xl.jpg" 
+                    class="img-fluid" alt="Pantai Melasti"></img>
+            
+            </picture>
               <p class="pt-3">Berdasarkan pengumuman terbaru pada Selasa, 5 Oktober 2021 lalu, semua kota dan kabupaten di Jawa
                   dan Bali sudah berada di PPKM level 3 dan 4.</p>
               <p>Penumpang berusia di bawah 18 tahun yang melakukan perjalanan ke Bali tetap diwajibkan mengikuti persyaratan
@@ -60,8 +67,15 @@ const Requirement = {
                       wajib menunjukkan kartu vaksinasi</li>
               </ul>
           
-              <h3 class="pb-2">Syarat Masuk Bali untuk WNA</h3>
-              <img src="images/wna.webp" class="img-fluid" alt="Pantai Penida">
+              <h3 class="pb-2">Syarat Masuk Bali untuk WNA</h3>              
+              <picture>
+                <source media="(max-width: 600px)" srcset="./images/wna-small.jpg">
+                <source media="(max-width: 1024px)" srcset="./images/wna-large.jpg">
+                <img 
+                    src="./images/wna-xl.jpg" 
+                    class="img-fluid" alt="Pantai Penida"></img>
+            
+            </picture>
               <p class="pt-3">Selama masa PPKM, Bali ditutup untuk kunjungan wisatawan asing. Namun pada 14 Oktober 2021
                   pemerintah telah membuka perjalanan bagi WNA untuk masuk bali dengan ketentuan yang berlaku. Menurut situs
                   CovidControl, semua wisatawa internasional hanya dpat masuk ke Indoneisa melalui Bali ( Bandara International
