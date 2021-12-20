@@ -1,23 +1,28 @@
 /* Content Hero */
-#content-hero img{
-    width: 100%;
-    height: 100vh;
-    -o-object-fit: cover;
-    object-fit: cover;
-    -o-object-position: center;
-    object-position: center;
+#content-hero__wisata {
+    background: url('/images/hero-3-xl.jpg');
+    min-height: 400px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;    
+    height: 100vh;    
 }
-
-#content-hero h1{
+#content-hero__wisata .container{
+    z-index: 1;
+    border-radius: 20px;
+}
+#content-hero__wisata h1{
     font-family: 'Mochiy Pop P One', sans-serif;
-    font-family: 'Permanent Marker', cursive;
+    font-family: 'Permanent Marker', cursive;    
 }
-#content-hero h1:nth-child(1){
-    font-size: 2rem;
+#content-hero__wisata h1:nth-child(1){
+    font-size: 3rem;
 }
-#content-hero h1:nth-child(2){
+#content-hero__wisata h1:nth-child(2){
     font-size: 5rem;
 }
+
 
 #content-hero .container{
     z-index: 1;
@@ -78,7 +83,7 @@
 }
 
 #des__wisata .parallax{
-    background: url('/images/hero/hero-4.jpg');
+    background: url('/images/hero-4-xl.jpg');
     min-height: 400px;
     background-attachment: fixed;
     background-position: center;
@@ -103,4 +108,56 @@
         width: 100%;
         padding: 0 10px;
     }   
+}
+@media screen and (max-width: 768px) {
+    #content-hero__wisata h1:nth-child(1){
+        font-size: 1.9rem;
+    }    
+}
+@media screen and (max-width: 425px) {
+    #content-hero__wisata h1:nth-child(1){
+        font-size: 1.6rem;
+    }    
+    #content-hero__wisata h1:nth-child(2){
+        font-size: 3rem;
+    }    
+}
+
+@media screen and (max-width: 600px) {
+    #content-hero__wisata {
+        background: url('/images/hero-3-small.jpg');
+        min-height: 400px;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;    
+        height: 100vh;           
+    }
+    #des__wisata .parallax{
+        background: url('/images/hero-4-smal.jpg');
+        min-height: 400px;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;            
+    }
+}
+@media screen and (max-width: 900px) {
+    #content-hero__wisata {
+        background: url('/images/hero-3-large.jpg');
+        min-height: 400px;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;    
+        height: 100vh;        
+    }
+    #des__wisata .parallax{
+        background: url('/images/hero-4-large.jpg');
+        min-height: 400px;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;    
+    }
 }
