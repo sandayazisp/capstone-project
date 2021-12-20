@@ -10,7 +10,7 @@ class AppBar extends HTMLElement {
     this.innerHTML = `
     <nav class="navbar navbar-expand-md navbar-dark fixed-top p-4">
         <div class="container d-flex">
-            <a class="navbar-brand" href="#"><img class="" src="icons/MAI.TOUR.png" alt="" srcset=""></a>
+            <a class="navbar-brand" href="#/home"><img class="" src="maitour.png" alt="Logo Mai.Tour"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
