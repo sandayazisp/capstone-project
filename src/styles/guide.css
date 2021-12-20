@@ -1,4 +1,64 @@
+#content-hero__tourGuide {
+    background: url('/images/hero-4-xl.jpg');
+    min-height: 400px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;    
+    height: 100vh;    
+}
+#content-hero__tourGuide .container{
+    z-index: 1;
+    border-radius: 20px;
+}
+#content-hero__tourGuide h1{
+    font-family: 'Mochiy Pop P One', sans-serif;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 4rem;
+}
+
+.tourguide .card-body li{
+    text-align: justify;
+}
+.tourguide .card{
+    border-radius: 20px;
+    overflow: hidden;
+}
+
 #daftar{
     background-color: #e2edff;
     padding: 2rem 1rem;
+}
+
+@media screen and (max-width: 768px) {
+    #content-hero__tourGuide h1{
+        font-size: 2.7rem;
+    }    
+}
+@media screen and (max-width: 375px) {
+    #content-hero__tourGuide h1{
+        font-size: 2.1rem;
+    }    
+}
+@media screen and (max-width: 600px) {
+    #content-hero__tourGuide {
+        background: url('/images/hero-4-small.jpg');
+        min-height: 400px;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;    
+        height: 100vh;        
+    }
+}
+@media screen and (max-width: 900px) {
+    #content-hero__tourGuide {
+        background: url('/images/hero-4-large.jpg');
+        min-height: 400px;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;    
+        height: 100vh;        
+    }
 }
