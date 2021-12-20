@@ -17,16 +17,16 @@ class AppBar extends HTMLElement {
             <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#/home">Home</a>
+                        <a class="nav-link text-white" href="#/home">Beranda</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-white" href="#/wisata">Wisata</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#/tour-guide">Tour Guide</a>
+                        <a class="nav-link text-white" href="#/tour-guide">Pemandu Wisata</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#/about-us">About Us</a>
+                        <a class="nav-link text-white" href="#/about-us">Tentang Kami</a>
                     </li>
                 </ul>
             </div>
