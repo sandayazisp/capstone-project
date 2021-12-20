@@ -112,7 +112,7 @@
 
 /* Guide Tour */
 #rek__guidetour .parallax{
-    background: url('/images/hero/hero-4.jpg');
+    background: url('/images/hero-4-xl.jpg');
     min-height: 400px;
     background-attachment: fixed;
     background-position: center;
@@ -219,6 +219,26 @@ opacity: 1;
     }
 }
 
+@media screen and (max-width: 600px) {
+    #rek__guidetour .parallax{
+        background: url('/images/hero-4-small.jpg');
+        min-height: 400px;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;        
+    }
+}
+@media screen and (max-width: 900px) {
+    #rek__guidetour .parallax{
+        background: url('/images/hero-4-large.jpg');
+        min-height: 400px;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;        
+    }
+}
 @media screen and (min-width: 765px) {
     #content-hero h1:nth-child(1){
         font-size: 2rem;
@@ -237,6 +257,6 @@ opacity: 1;
         font-size: 3rem;
     }
     #content-hero h1:nth-child(2){
-        font-size: 10rem;
+        font-size: 8rem;
     }
 }
