@@ -17,7 +17,7 @@ const Home = {
                 </div>
         
                 <div
-                    class="container position-absolute top-50 start-50 translate-middle bg-dark bg-opacity-50 p-3 text-white w-100 d-flex align-items-center justify-content-center flex-column">
+                    class="container position-absolute top-50 start-50 translate-middle bg-dark bg-opacity-50 p-3 text-white d-flex align-items-center justify-content-center flex-column">
                     <h1>Selamat Datang Di</h1>
                     <h1 class="text-md-start">BALI</h1>
                     <p class="text-center">Bali merupakan destinasi tempat wisata yang terkenal di seluruh manca negara. Keindahan pantai, gunung serta persawahan yang dimiliki oleh bali membuat ketertarikan wisatawan mengunjungi bali</p>                    
