@@ -10,5 +10,5 @@ Mai.Tour adalah sebuah website untuk memperkenalkan objek wisata yang ada dibali
 `npm run build` untuk menjalankan project dalam mode production.
 
 
-![image](https://user-images.githubusercontent.com/55866548/146875883-e6d59eb3-8884-40c1-a9c1-f8b3eea79e11.png)
+![image](https://user-images.githubusercontent.com/55866548/146876050-8916a1bb-e6a6-4bfe-8ddd-b7cc0a98607c.png)
 
